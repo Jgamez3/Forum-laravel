@@ -89,7 +89,7 @@
                     <a href="https://laracasts.com">Laracasts test</a>
                     <a href="https://laravel-news.com">News test</a>
                     <a href="https://nova.laravel.com">Nova test</a>
-                    <a href="https://forge.laravel.com">Forge</a>
+                    <a href="https://forge.laravel.com">Forge test</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
