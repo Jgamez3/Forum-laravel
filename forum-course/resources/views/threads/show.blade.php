@@ -31,17 +31,17 @@
     @if(auth()->check())
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <form method="POST" {{$thread->path() . '/replies'}}action="">
+                <form method="POST" action="{{$thread->path() . '/replies'}}">
                     {{csrf_field()}}
                     <div class="form-group"> 
-                        <textarea name-"body" id="body" class="form-control" placeholder="idjiqjdi" rows="5"></textarea>
+                        <textarea name="body" id="body" class="form-control" placeholder="say something" rows="5"></textarea>
                     </div>
                     <button type="submit" class="btn btn-default">Submit</button>
                 </form>
             </div>
         </div>
     @else
-    <p>dwhdiwhdi</p>    
+    <p class= "text-center">Please <a href="{{route('login')}}">sign in</a> to particpate!</P>
     @endif    
 </div>
 @endsection
