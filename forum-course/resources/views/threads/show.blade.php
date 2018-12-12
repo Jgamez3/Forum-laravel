@@ -32,7 +32,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <form method="POST" action="{{$thread->path() . '/replies'}}">
-                    {{csrf_field()}}
+                {{csrf_field()}}
                     <div class="form-group"> 
                         <textarea name="body" id="body" class="form-control" placeholder="say something" rows="5"></textarea>
                     </div>
