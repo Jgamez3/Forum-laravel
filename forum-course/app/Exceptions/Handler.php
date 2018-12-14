@@ -33,7 +33,7 @@ class Handler extends ExceptionHandler
      * @return void
      */
     public function report(Exception $exception)
-    {
+    {   
         parent::report($exception);
     }
 
@@ -46,7 +46,6 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
-        if(app()->environment() === 'testing') throw $exception;
         return parent::render($request, $exception);
     }
 }

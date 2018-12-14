@@ -3,8 +3,7 @@
 namespace Tests\Feature;
 
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 
@@ -33,7 +32,7 @@ class ParticipateInForumTest extends TestCase
 
         $reply = make('App\Reply');
         
-        $this->post($thread->path() . '/replies' , $reply->toArray());
+        $this->post($thread->path() . '/replies', $reply->toArray());
 
         $this->get($thread->path())
             ->assertSee($reply->body);
