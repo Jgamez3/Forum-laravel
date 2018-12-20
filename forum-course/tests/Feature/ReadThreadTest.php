@@ -3,20 +3,19 @@
 namespace Tests\Feature;
 
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class ReadThreadTest extends TestCase
 {
     use DatabaseMigrations;
     
-    public function setUp(){
+    // public function setUp(){
         
-        parent::setUp();
+    //     parent::setUp();
 
-        $this->thread = factory('App\Thread')->create();
-    }
+    //     $this->thread = factory('App\Thread')->create();
+    // }
     /** @test */
 
     public function a_user_can_view_all_threads()
